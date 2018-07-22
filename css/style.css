@@ -4,15 +4,43 @@ h1,h2,h3,h4{
 *{
     box-sizing: border-box;
 }
+.justify{
+    text-align: justify;
+}
 div.caracteristica{
     margin-bottom: 15px;
     padding:15px 0; 
     
-    
+}
+.pensamiento{
+    border-radius: 10px;
+    left: 6.5rem;
+    top: 5rem;
+}
+.pensamiento::before{
+    content: "s";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+
+}
+.relativo{
+    position: relative;
+}
+.absoluto{
+    position: absolute;
+}
+.letra{
+    font-family: 'Noto Sans', sans-serif;
 }
 @keyframes start{
     from{color:white;font-size: 2rem}
     to{color: yellow;font-size: 4rem}
+}
+.border{
+    border-style: solid;
 }
 i.animacion{
     animation-name: start;
@@ -31,7 +59,7 @@ p.numero{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f3e5f5 ;
+    background: #b3e5fc ;
     border-radius: 50%;
 }
 p.positivo{
